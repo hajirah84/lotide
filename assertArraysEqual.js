@@ -13,15 +13,9 @@ const eqArrays = function (arr1, arr2) {
 }
 
 const assertArrayEqual = function (arr1, arr2) {
-    if (arr1.length !== arr2.length) {
-        console.log("this array doesn't match");
+    if (eqArrays(arr1, arr2)) {
+        console.log ("✅✅✅")
+    } else {
+        console.log("🛑🛑🛑")
     }
-
-    
-    for (let i = 0; i < arr1.length; i++) {
-        if (arr1[i] !== arr2[i]) {
-            console.log("this array doesn't match"); 
-        }
-    }
-    console.log("pass"); // 
 }
