@@ -23,5 +23,5 @@ const assertArrayEqual = function (arr1, arr2) {
             console.log("this array doesn't match"); 
         }
     }
-    console.log("this array is a match"); // 
+    console.log("pass"); // 
 }
