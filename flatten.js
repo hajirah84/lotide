@@ -20,8 +20,16 @@ const assertArrayEqual = function (arr1, arr2) {
     }
 }
 
-const flatten = function(arr){
-    if (arr.isArray) {
-        console.log(arr.flat());
-    }
-}
+const flatten = function(arr) {
+    const result = []; 
+    arr.forEach(item => {
+        if (Array.isArray(item)) {
+            result = result.concat(flatten(item));
+        } else {
+            result.push(item);
+        }
+    });
+    return result;
+    });
+
+    return result; // Return the flattened array
