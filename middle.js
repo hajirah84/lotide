@@ -11,13 +11,13 @@
 //     return true; 
 // };
 
-// const assertArraysEqual = function (arr1, arr2) {
-//     if (eqArrays(arr1, arr2)) {
-//         console.log(`✅✅✅ Assertion Passed: ${inspect(arr1)} === ${inspect(arr2)}`);
-//     } else {
-//         console.log(`🛑🛑🛑 Assertion Failed: ${inspect(arr1)} !== ${inspect(arr2)}`);
-//     }
-// };
+const assertArraysEqual = function (arr1, arr2) {
+    if (eqArrays(arr1, arr2)) {
+        console.log(`✅✅✅ Assertion Passed: ${inspect(arr1)} === ${inspect(arr2)}`);
+    } else {
+        console.log(`🛑🛑🛑 Assertion Failed: ${inspect(arr1)} !== ${inspect(arr2)}`);
+    }
+};
 
 const middle = function(arr) {
     const length = arr.length; 
