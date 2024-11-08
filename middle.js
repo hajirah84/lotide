@@ -32,9 +32,10 @@ const middle = function(arr) {
         return [arr[i]]; 
     }
 };
-module.exports = middle; 
-module.exports = assertArraysEqual;
-module.exports = eqArrays;
+module.exports = {
+    middle: middle,
+    assertArraysEqual: assertArraysEqual,
+  };
 
 // assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); 
 // assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
