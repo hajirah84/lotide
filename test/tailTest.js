@@ -9,20 +9,20 @@
 // const singleElementArray = ["Hello"];
 // const singleResult = tail(singleElementArray);
 // assertEqual(singleResult.length, 0); 
-// const assert = require('chai').assert;
-// const tail = require('../tail'); // Adjust the path to your tail function
+const assert = require('chai').assert;
+const tail = require('../tail'); 
 
 describe("#tail", () => {
   it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
     const words = ["Hello", "Lighthouse", "Labs"];
     const result = tail(words);
     assert.deepEqual(result, ["Lighthouse", "Labs"]);
-    assert.strictEqual(words.length, 3); // Original array remains unchanged
+    assert.strictEqual(words.length, 3); 
   });
 
   it("returns an empty array for a single-element array ['Hello']", () => {
     const singleElementArray = ["Hello"];
     const result = tail(singleElementArray);
-    assert.strictEqual(result.length, 0); // Expecting an empty array
+    assert.strictEqual(result.length, 0); 
   });
 });
